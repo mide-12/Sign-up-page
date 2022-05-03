@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit",sans-serif;
+    background: #efefef;
+	font-size: 16px;
+	color: #777;
+}
+
+main {
+    display: flex;
+    width: 60%;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 8% auto;
+}
+
+.leftbox {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftbox h1 {
+    text-align: left;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.leftbox input {
+    width: 70%;
+    margin-bottom: 20px;
+    padding: 4px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.leftbox button {
+    width: 30%;
+    height: 32px;
+    background: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.leftbox button:hover {
+    background: transparent;
+    color: #f44336;
+    border: 1px solid #f44336;
+}
+
+.rightbox {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background: url(./image.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.rightbox h2 {
+    font-size: 28px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.twitter-btn {
+    width: 60%;
+    height: 32px;
+    color: #fff;
+    background: #55acee;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.twitter-btn:hover {
+    background: transparent;
+    color: #55acee;
+    border: 1px solid #55acee;
+}
+
+.facebook-btn {
+    width: 60%;
+    height: 32px;
+    color: #fff;
+    background: #32508e;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.facebook-btn:hover {
+    background: transparent;
+    color: #32508e;
+    border: 1px solid #32508e;
+}
+
+.google-btn {
+    width: 60%;
+    height: 32px;
+    color: #fff;
+    background: #dd4b39;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.google-btn:hover {
+    background: transparent;
+    color: #dd4b39;
+    border: 1px solid #dd4b39;
+}
+
+@media(max-width: 850px) {
+    main {
+        flex-direction: column;
+        height: 700px;
+        width: 90%;
+    }
+    
+    .google-btn,
+    .facebook-btn,
+    .twitter-btn {
+        width: 80%;
+        height: 40px;
+    }
+
+    .leftbox button {
+        width: 50%;
+        height: 40px;
+    }
+}
